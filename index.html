@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="cs" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Prozkoumávání Planet - WEB1</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="node_modules/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-dark text-light">
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black border-bottom border-secondary">
+
+        <div class="container">
+
+            <a class="navbar-brand text-warning" href="index.html">
+                <i class="fa-solid fa-earth-americas me-2"></i>
+                Vesmírná Expedice
+            </a>
+
+            <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <ul class="navbar-nav me-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">
+                            <i class="fa-solid fa-house me-1"></i>
+                            Planety Sluneční soustavy
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="kontakt.html">
+                            <i class="fa-solid fa-paper-plane me-1"></i>
+                            Rezervace
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kontakt">
+                            <i class="fa-solid fa-phone me-1"></i>
+                            Kontakt
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <div class="container my-5">
+
+        <!-- CAROUSEL -->
+        <h2 class="mb-3 text-info">
+            <i class="fa-solid fa-shuttle-space me-2"></i>
+            Galerie Planet
+        </h2>
+
+        <div id="planetCarousel"
+             class="carousel slide mb-5 shadow-lg"
+             data-bs-ride="carousel">
+
+            <div class="carousel-inner rounded">
+
+                <div class="carousel-item active">
+
+                    <img src="https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?auto=format&fit=crop&w=1200&h=400"
+                         class="d-block w-100"
+                         alt="Mars">
+
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded">
+
+                        <h5>Mars</h5>
+
+                        <p>
+                            Rudá planeta Sluneční soustavy.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="carousel-item">
+
+                    <img src="https://images.unsplash.com/photo-1614732414444-096e5f1122d5?auto=format&fit=crop&w=1200&h=400"
+                         class="d-block w-100"
+                         alt="Jupiter">
+
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded">
+
+                        <h5>Jupiter</h5>
+
+                        <p>
+                            Největší plynný obr v naší soustavě.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="carousel-item">
+
+                    <img src="https://images.unsplash.com/photo-1614728894747-a83421e2b9c9?auto=format&fit=crop&w=1200&h=400"
+                         class="d-block w-100"
+                         alt="Saturn">
+
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded">
+
+                        <h5>Saturn</h5>
+
+                        <p>
+                            Fascinující planeta známá svými prstenci.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="carousel-item">
+
+                    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&h=400"
+                         class="d-block w-100"
+                         alt="Země">
+
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded">
+
+                        <h5>Země</h5>
+
+                        <p>
+                            Náš domov plný života.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <button class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#planetCarousel"
+                    data-bs-slide="prev">
+
+                <span class="carousel-control-prev-icon"></span>
+
+            </button>
+
+
+            <button class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#planetCarousel"
+                    data-bs-slide="next">
+
+                <span class="carousel-control-next-icon"></span>
+
+            </button>
+
+        </div>
+
+
+        <!-- PROGRESS BAR -->
+
+        <h2 class="mb-3 text-info">
+
+            <i class="fa-solid fa-rocket me-2"></i>
+
+            Postup průzkumné mise Voyager
+
+        </h2>
+
+        <div class="progress mb-5" style="height: 25px;">
+
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning text-dark fw-bold"
+                 style="width: 85%;">
+
+                85 % – Cílové dráhy dosaženo
+
+            </div>
+
+        </div>
+
+
+        <!-- KARTY -->
+
+        <h2 class="mb-3 text-info">
+
+            <i class="fa-solid fa-meteor me-2"></i>
+
+            Typy těles
+
+        </h2>
+
+
+        <div class="row g-4 mb-5">
+
+            <div class="col-md-4">
+
+                <div class="card h-100 bg-secondary bg-opacity-25 border-secondary text-light">
+
+                    <div class="card-body text-center">
+
+                        <i class="fa-solid fa-earth-americas fa-3x mb-3 text-success"></i>
+
+                        <h5 class="card-title">
+                            Terestrické planety
+                        </h5>
+
+                        <p class="card-text">
+                            Kamenné planety s pevným povrchem jako
+                            Merkur, Venuše, Země a Mars.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-4">
+
+                <div class="card h-100 bg-secondary bg-opacity-25 border-secondary text-light">
+
+                    <div class="card-body text-center">
+
+                        <i class="fa-solid fa-sun fa-3x mb-3 text-warning"></i>
+
+                        <h5 class="card-title">
+                            Plynní obři
+                        </h5>
+
+                        <p class="card-text">
+                            Masivní obří planety složené převážně
+                            z vodíku a helia: Jupiter a Saturn.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-4">
+
+                <div class="card h-100 bg-secondary bg-opacity-25 border-secondary text-light">
+
+                    <div class="card-body text-center">
+
+                        <i class="fa-solid fa-snowflake fa-3x mb-3 text-info"></i>
+
+                        <h5 class="card-title">
+                            Ledoví obři
+                        </h5>
+
+                        <p class="card-text">
+                            Vzdálená tělesa bohatá na zmrzlou vodu,
+                            amoniak a metan: Uran a Neptun.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- TABULKA -->
+
+        <h2 class="mb-3 text-info">
+
+            <i class="fa-solid fa-table-list me-2"></i>
+
+            Srovnání vybraných planet
+
+        </h2>
+
+
+        <div class="table-responsive mb-5">
+
+            <table class="table table-dark table-striped table-hover table-bordered border-secondary">
+
+                <thead class="table-primary">
+
+                    <tr>
+                        <th>Planeta</th>
+                        <th>Průměr (km)</th>
+                        <th>Počet měsíců</th>
+                        <th>Typ</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>Mars</td>
+                        <td>6 779</td>
+                        <td>2</td>
+                        <td>
+                            <span class="badge bg-danger">
+                                Kamenná
+                            </span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Jupiter</td>
+                        <td>139 820</td>
+                        <td>95</td>
+                        <td>
+                            <span class="badge bg-warning text-dark">
+                                Plynný obr
+                            </span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Neptun</td>
+                        <td>49 244</td>
+                        <td>16</td>
+                        <td>
+                            <span class="badge bg-info text-dark">
+                                Ledový obr
+                            </span>
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+
+    <!-- KONTAKT -->
+
+    <section id="kontakt" class="bg-black border-top border-secondary py-5">
+
+        <div class="container">
+
+            <h2 class="text-info mb-4">
+
+                <i class="fa-solid fa-address-book me-2"></i>
+
+                Kontakt
+
+            </h2>
+
+
+            <div class="row g-4">
+
+                <div class="col-md-4">
+
+                    <div class="card bg-dark border-secondary h-100">
+
+                        <div class="card-body text-center">
+
+                            <i class="fa-solid fa-phone fa-2x text-warning mb-3"></i>
+
+                            <h5>Telefon</h5>
+
+                            <p class="mb-0">
+                                +420 777 123 456
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-4">
+
+                    <div class="card bg-dark border-secondary h-100">
+
+                        <div class="card-body text-center">
+
+                            <i class="fa-solid fa-envelope fa-2x text-warning mb-3"></i>
+
+                            <h5>E-mail</h5>
+
+                            <p class="mb-0">
+                                info@vesmirnaexpedice.cz
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-4">
+
+                    <div class="card bg-dark border-secondary h-100">
+
+                        <div class="card-body text-center">
+
+                            <i class="fa-solid fa-location-dot fa-2x text-warning mb-3"></i>
+
+                            <h5>Adresa</h5>
+
+                            <p class="mb-0">
+                                Vesmírné středisko 42<br>
+                                Praha, Česká republika
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PATIČKA -->
+
+    <footer class="bg-black text-white text-center py-4 border-top border-secondary">
+
+        <div class="container">
+
+            <p class="mb-2">
+                &copy; 2026 Vesmírná Expedice | zdenekhrdina.cz
+            </p>
+
+
+            <a href="dokumentace.pdf"
+               target="_blank"
+               class="text-info me-3">
+
+                <i class="fa-solid fa-file-pdf me-1"></i>
+
+                Dokumentace (PDF)
+
+            </a>
+
+
+            <a href="https://github.com/maReK-o0/WEB1"
+               target="_blank"
+               class="text-white">
+
+                <i class="fa-brands fa-github me-1"></i>
+
+                GitHub Repozitář
+
+            </a>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Bootstrap JS -->
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

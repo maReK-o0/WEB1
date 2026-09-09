@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="cs" data-bs-theme="dark">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Rezervace Expedice - WEB1</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+          rel="stylesheet">
+
+    <!-- Tom Select CSS -->
+    <link href="node_modules/tom-select/dist/css/tom-select.bootstrap5.css"
+          rel="stylesheet">
+
+</head>
+
+<body class="bg-dark text-light">
+
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black border-bottom border-secondary">
+
+        <div class="container">
+
+            <a class="navbar-brand text-warning" href="index.html">
+
+                <i class="fa-solid fa-earth-americas me-2"></i>
+
+                Vesmírná Expedice
+
+            </a>
+
+
+            <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <ul class="navbar-nav me-auto">
+
+                    <li class="nav-item">
+
+                        <a class="nav-link"
+                           href="index.html">
+
+                            <i class="fa-solid fa-house me-1"></i>
+
+                            Planety Sluneční soustavy
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a class="nav-link active"
+                           href="kontakt.html">
+
+                            <i class="fa-solid fa-paper-plane me-1"></i>
+
+                            Rezervace
+
+                        </a>
+
+                    </li>
+
+
+                    <li class="nav-item">
+
+                        <a class="nav-link"
+                           href="index.html#kontakt">
+
+                            <i class="fa-solid fa-phone me-1"></i>
+
+                            Kontakt
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <div class="container my-5">
+
+        <h1 class="mb-4 text-info">
+
+            <i class="fa-solid fa-paper-plane me-2"></i>
+
+            Přihláška na vesmírnou misi
+
+        </h1>
+
+
+        <form action="#"
+              method="post"
+              class="card bg-secondary bg-opacity-10 border-secondary p-4 shadow-lg">
+
+
+            <!-- EMAIL -->
+
+            <div class="mb-3">
+
+                <label for="email"
+                       class="form-label">
+
+                    E-mailová adresa kosmonauta *
+
+                </label>
+
+
+                <input type="email"
+                       class="form-control bg-dark text-light border-secondary"
+                       id="email"
+                       name="email"
+                       required
+                       placeholder="astro@vesmir.cz">
+
+            </div>
+
+
+            <!-- MULTISELECT -->
+
+            <div class="mb-3">
+
+                <label for="select-planets"
+                       class="form-label">
+
+                    Vyberte cílové planety k návštěvě *
+
+                </label>
+
+
+                <select id="select-planets"
+                        name="planets[]"
+                        multiple
+                        required>
+
+                    <option value=""
+                            disabled
+                            selected>
+                        vyberte...
+                    </option>
+
+                    <option value="mars">
+                        Mars
+                    </option>
+
+                    <option value="jupiter">
+                        Jupiter
+                    </option>
+
+                    <option value="saturn">
+                        Saturn
+                    </option>
+
+                    <option value="uran">
+                        Uran
+                    </option>
+
+                    <option value="neptun">
+                        Neptun
+                    </option>
+
+                </select>
+
+
+                <div class="form-text text-secondary">
+
+                    Vyberte jednu nebo více planet.
+
+                </div>
+
+            </div>
+
+
+            <!-- TEXTAREA -->
+
+            <div class="mb-3">
+
+                <label for="message"
+                       class="form-label">
+
+                    Poznámky k misi *
+
+                </label>
+
+
+                <textarea class="form-control bg-dark text-light border-secondary"
+                          id="message"
+                          name="message"
+                          rows="6"
+                          required
+                          placeholder="Popište vaše zkušenosti s létáním a očekávání od mise..."></textarea>
+
+            </div>
+
+
+            <!-- SOUHLAS -->
+
+            <div class="form-check mb-4">
+
+                <input class="form-check-input"
+                       type="checkbox"
+                       id="souhlas"
+                       required>
+
+                <label class="form-check-label"
+                       for="souhlas">
+
+                    Souhlasím se zpracováním údajů pro účely rezervace.
+
+                </label>
+
+            </div>
+
+
+            <button type="submit"
+                    class="btn btn-warning text-dark fw-bold">
+
+                <i class="fa-solid fa-user-astronaut me-2"></i>
+
+                Odeslat přihlášku
+
+            </button>
+
+        </form>
+
+    </div>
+
+
+    <!-- KONTAKT -->
+
+    <section class="bg-black border-top border-secondary py-5">
+
+        <div class="container">
+
+            <h2 class="text-info mb-4">
+
+                <i class="fa-solid fa-address-book me-2"></i>
+
+                Kontakt na vesmírnou expedici
+
+            </h2>
+
+
+            <div class="row g-4">
+
+
+                <div class="col-md-4">
+
+                    <div class="card bg-dark border-secondary text-light h-100">
+
+                        <div class="card-body text-center">
+
+                            <i class="fa-solid fa-phone fa-2x text-warning mb-3"></i>
+
+                            <h5>Telefon</h5>
+
+                            <p>
+                                +420 777 123 456
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-4">
+
+                    <div class="card bg-dark border-secondary text-light h-100">
+
+                        <div class="card-body text-center">
+
+                            <i class="fa-solid fa-envelope fa-2x text-warning mb-3"></i>
+
+                            <h5>E-mail</h5>
+
+                            <p>
+                                info@vesmirnaexpedice.cz
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-4">
+
+                    <div class="card bg-dark border-secondary text-light h-100">
+
+                        <div class="card-body text-center">
+
+                            <i class="fa-solid fa-location-dot fa-2x text-warning mb-3"></i>
+
+                            <h5>Adresa</h5>
+
+                            <p>
+                                Vesmírné středisko 42<br>
+                                Praha, Česká republika
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PATIČKA -->
+
+    <footer class="bg-black text-white text-center py-4 border-top border-secondary">
+
+        <div class="container">
+
+            <p class="mb-1">
+
+                &copy; 2026 Vesmírná Expedice | zdenekhrdina.cz
+
+            </p>
+
+
+            <a href="dokumentace.pdf"
+               target="_blank"
+               class="text-info me-3">
+
+                <i class="fa-solid fa-file-pdf me-1"></i>
+
+                Dokumentace (PDF)
+
+            </a>
+
+
+            <a href="https://github.com/maReK-o0/WEB1"
+               target="_blank"
+               class="text-white">
+
+                <i class="fa-brands fa-github me-1"></i>
+
+                GitHub Repozitář
+
+            </a>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JS -->
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="node_modules/tom-select/dist/js/tom-select.complete.min.js"></script>
+
+
+    <script>
+
+        new TomSelect('#select-planets', {
+
+            maxItems: 5,
+
+            plugins: ['remove_button'],
+
+            placeholder: 'Vyberte...',
+
+            onInitialize: function () {
+
+                this.removeOption('');
+
+            }
+
+        });
+
+    </script>
+
+</body>
+
+</html>
